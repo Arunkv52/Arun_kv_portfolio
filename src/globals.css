@@ -1,0 +1,53 @@
+/* import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Bricolage Grotesque", sans-serif;
+  --sb-track-color: #232e33;
+  --sb-thumb-color: #fe4300;
+  --sb-size: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+body::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
+
+/* globals.css (or any imported global css) */
+@keyframes wave {
+  0%   { transform: translateX(0) rotate(0deg); }
+  25%  { transform: translateX(0) rotate(20deg); }
+  50%  { transform: translateX(0) rotate(-20deg); }
+  75%  { transform: translateX(0) rotate(20deg); }
+  100% { transform: translateX(0) rotate(0deg); }
+}
+
+/* utility class you can reuse */
+.animate-wave {
+  animation: wave 1s ease-in-out infinite;
+}
+
+/* Respect reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .animate-wave-x { animation: none; }
+}
