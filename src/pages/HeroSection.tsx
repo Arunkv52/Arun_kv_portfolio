@@ -11,7 +11,7 @@ import GitHubIcon from '../../public/icons/github.svg'
 const HeroSection = () => {
   return (
     <>
-      <div className='hero-container md:px-0 px-0 md:flex justify-between items-center gap-5 md:relative relative md:-top-30 top-0 md:right-0 right-0 bottom-0'>
+      <div className='hero-container md:px-0 px-0 md:flex justify-between items-center gap-5 md:relative relative md:-top-35 top-0 md:right-0 right-0 bottom-0'>
         <div className='md:w-[70%] w-full md:relative relative md:top-20 top-20 md:left-30 left-0 md:px-0 px-5'>
           <h1 className='md:text-8xl text-5xl font-bold flex justify-start items-center gap-5'>
             I'm Arun{' '}
