@@ -14,14 +14,14 @@ const Experience = () => {
       company: 'Prism Adverto Pvt Ltd',
       mode: 'Full time',
       description:
-        'Designed, developed, and maintained responsive, scalable web applications using React.js, JavaScript (ES6+), HTML5, and CSS3, following modern UI/UX principles. Utilized Redux and Context API for efficient state management and integrated RESTful APIs to deliver dynamic, interactive features. Collaborated with designers and backend teams to create optimized, user-centric interfaces, while also handling domain purchases, hosting setup, and deployments through cPanel and hPanel. Implemented security measures such as firewalls, SSL, and routine server maintenance, and resolved server-side issues to ensure stability. Conducted UI testing and debugging for cross-browser compatibility and accessibility, and optimized website performance, loading speed, and SEO to improve overall user engagement.'
+        'Designed, developed, and maintained responsive, scalable web applications using React.js, TypeScript, JavaScript (ES6+), HTML5, and CSS3, following modern UI/UX principles. Utilized Redux and Context API for efficient state management and integrated RESTful APIs to deliver dynamic, interactive features. Collaborated with designers and backend teams to create optimized, user-centric interfaces, while also handling domain purchases, hosting setup, and deployments through cPanel and hPanel. Implemented security measures such as firewalls, SSL, and routine server maintenance, and resolved server-side issues to ensure stability. Conducted UI testing and debugging for cross-browser compatibility and accessibility, and optimized website performance, loading speed, and SEO to improve overall user engagement.'
     },
     {
       year: 'Jan 2025 - Present',
-      role: 'UI Developer',
+      role: 'React Developer',
       company: 'Freelance',
       mode: 'Full time',
-      description: 'As a Freelance UI Developer, I developed modern, responsive websites and web applications using React.js, Redux, Context Api, JavaScript, HTML, and CSS. I built reusable components, integrated REST APIs, and implemented efficient state management for dynamic and scalable UIs. I collaborated directly with clients to understand requirements, delivered customized solutions, and handled end-to-end development—including deployment, hosting setup, and performance optimization. My freelance work strengthened my problem-solving skills and ability to deliver high-quality projects independently.'
+      description: 'As a Freelance UI Developer, I developed modern, responsive websites and web applications using React.js, TypeScript, Redux, Context Api, JavaScript, HTML, and CSS. I built reusable components, integrated REST APIs, and implemented efficient state management for dynamic and scalable UIs. I collaborated directly with clients to understand requirements, delivered customized solutions, and handled end-to-end development—including deployment, hosting setup, and performance optimization. My freelance work strengthened my problem-solving skills and ability to deliver high-quality projects independently.'
     },
      {
       year: 'Jul 2022 - Dec 2024',

@@ -46,7 +46,7 @@ const About = () => {
                 I am a passionate Front-End React Developer with 3+ years of
                 experience in building responsive, user-friendly, and
                 performance-driven websites and web applications. I specialize
-                in React.js, Redux, Context API, JavaScript, HTML, CSS,
+                in React.js, TypeScript, Redux, Context API, JavaScript, HTML, CSS,
                 Bootstrap, Tailwind CSS, and WordPress. I enjoy turning ideas
                 into clean, modern, and scalable UI solutions using reusable
                 components and best coding practices.
