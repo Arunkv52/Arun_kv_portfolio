@@ -17,7 +17,7 @@ const Contact = () => {
  
 
   const onSubmit = async (data: FormFields) => {
-    const res = await fetch('http://localhost:5000/send-mail', {
+    const res = await fetch('https://arun-kv-portfolio.vercel.app/send-mail', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
