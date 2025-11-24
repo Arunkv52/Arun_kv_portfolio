@@ -1,4 +1,3 @@
-
 const Skills = () => {
   const Language: string[] = ['HTML', 'CSS', 'javaScript']
 
@@ -13,7 +12,13 @@ const Skills = () => {
   ]
 
   const Tools: string[] = [
-     'GitHub', 'REST API Integration', 'WordPress', 'cPanel', 'hPanel', 'Figma', 'Adobe Illustrator'
+    'GitHub',
+    'REST API Integration',
+    'WordPress',
+    'cPanel',
+    'hPanel',
+    'Figma',
+    'Adobe Illustrator'
   ]
 
   return (
@@ -29,14 +34,16 @@ const Skills = () => {
               <p className='text-[#fe4300] text-2xl'>(04)</p>
             </div>
           </div>
-          
+
           {/* icon with text */}
           <div className='py-5 md:flex justify-start items-center flex-wrap gap-5 w-full'>
             <div>
               <p className='text-2xl pb-3'>Languages :</p>
               <ul className='md:flex md:justify-between md:items-center flex flex-wrap justify-start items-center gap-3 md:gap-5'>
                 {Language.map(item => (
-                  <li className='md:text-2xl text-base bg-[#e4c2f9] md:p-6 p-2'>{item}</li>
+                  <li className='md:text-2xl text-base bg-[#e4c2f9] md:p-6 p-2'>
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -46,7 +53,9 @@ const Skills = () => {
               <p className='text-2xl pb-3'>Frameworks & Libraries :</p>
               <ul className='md:flex md:justify-between md:items-center flex flex-wrap justify-start items-center gap-3 md:gap-5'>
                 {Libraries.map(item => (
-                  <li className='md:text-2xl text-base bg-[#e4c2f9] md:p-6 p-2'>{item}</li>
+                  <li className='md:text-2xl text-base bg-[#e4c2f9] md:p-6 p-2'>
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>
@@ -56,7 +65,9 @@ const Skills = () => {
               <p className='text-2xl pb-3'>Tools & Technologies :</p>
               <ul className='md:flex md:justify-between md:items-center flex flex-wrap justify-start items-center gap-3 md:gap-5'>
                 {Tools.map(item => (
-                  <li className='md:text-2xl text-base bg-[#e4c2f9] md:p-6 p-2'>{item}</li>
+                  <li className='md:text-2xl text-base bg-[#e4c2f9] md:p-6 p-2'>
+                    {item}
+                  </li>
                 ))}
               </ul>
             </div>

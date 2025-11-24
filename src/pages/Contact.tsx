@@ -14,8 +14,17 @@ const Contact = () => {
     formState: { errors }
   } = useForm<FormFields>()
 
-  const onSubmit = (data: any) => {
-    console.log('Form Data Submitted:', data)
+ 
+
+  const onSubmit = async (data: FormFields) => {
+    const res = await fetch('http://localhost:5000/send-mail', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(data)
+    })
+
+    const result = await res.json()
+    console.log(result)
   }
 
   return (
@@ -46,7 +55,10 @@ const Contact = () => {
                     <label className='text-gray-600 mb-2'>Name *</label>
                     <input
                       type='text'
-                      {...register('name', { required: 'Name is required' })}
+                      {...register('name', {
+                        required: 'Name is required',
+                        minLength: 3
+                      })}
                       className='border-b border-gray-300 focus:outline-none focus:border-black py-2'
                     />
                     {errors.name && (
@@ -61,7 +73,10 @@ const Contact = () => {
                     <label className='text-gray-600 mb-2'>Phone *</label>
                     <input
                       type='text'
-                      {...register('phone', { required: 'Phone is required' })}
+                      {...register('phone', {
+                        required: 'Phone is required',
+                        minLength: 10
+                      })}
                       className='border-b border-gray-300 focus:outline-none focus:border-black py-2'
                     />
                     {errors.phone && (
@@ -120,10 +135,16 @@ const Contact = () => {
               {/* Right Section */}
               <div className='md:flex flex-col justify-start items-end  text-gray-600 text-lg'>
                 <div className='space-y-10'>
-                  <a href='https://github.com/Arunkv52' className='block hover:text-black'>
+                  <a
+                    href='https://github.com/Arunkv52'
+                    className='block hover:text-black'
+                  >
                     Github
                   </a>
-                  <a href='https://www.linkedin.com/in/arun-kbva-kv12/' className='block hover:text-black'>
+                  <a
+                    href='https://www.linkedin.com/in/arun-kbva-kv12/'
+                    className='block hover:text-black'
+                  >
                     LinkedIn
                   </a>
                 </div>
