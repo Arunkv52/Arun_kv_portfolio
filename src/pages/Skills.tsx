@@ -3,6 +3,7 @@ const Skills = () => {
 
   const Libraries: string[] = [
     'React.js',
+    'Next.js',
     'TypeScript',
     'Redux',
     'Context API',
@@ -13,12 +14,11 @@ const Skills = () => {
 
   const Tools: string[] = [
     'GitHub',
-    'REST API Integration',
+    'API Integration',
     'WordPress',
-    'cPanel',
-    'hPanel',
+    'Hosting Manage',
     'Figma',
-    'Adobe Illustrator'
+    'Illustrator'
   ]
 
   return (
