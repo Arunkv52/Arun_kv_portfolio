@@ -19,7 +19,7 @@ const HeroSection = () => {
               <img src={WaveImg} alt='' className='animate-wave' />
             </span>
           </h1>
-          <h2 className='md:text-8xl text-4xl font-bold'>UI / UX Developer</h2>
+          <h2 className='md:text-8xl text-4xl font-bold'>UI Developer</h2>
           <p className='md:w-2/3 w-full md:py-8 pt-5 pb-30 md:px-0'>
             Passionate about building clean, responsive, and user-friendly web
             interfaces using modern technologies. I bring 3+ years of hands-on
